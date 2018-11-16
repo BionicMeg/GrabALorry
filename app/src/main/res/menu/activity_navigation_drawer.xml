@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1"
+        >
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="@string/navigation_profile" />
+        <item
+            android:id="@+id/nav_top_up"
+            android:icon="@drawable/wallet"
+            android:title="@string/navigation_top_up" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="@string/navigation_history" />
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+    <!--<item android:title="Communicate">-->
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/navigation_logout" />
+
+    </group>
+
+</menu>
