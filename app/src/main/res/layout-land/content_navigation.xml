@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NavigationActivity"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/welcomeNote"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/home_greet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/home_name"
+            android:gravity="center"
+            android:text="@string/greetText"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/home_greet"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balanceLayout"
+        >
+        <ImageView
+            android:id="@+id/rectshape1"
+            android:contentDescription="@string/balance_value"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/rectangle"
+
+            />
+
+        <TextView
+            android:id="@+id/balanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rectshape1"
+            android:layout_alignTop="@+id/rectshape1"
+            android:layout_alignBottom="@+id/rectshape1"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text="@string/balance_title"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/balanceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/rectshape1"
+            android:layout_alignTop="@+id/rectshape1"
+            android:layout_alignBottom="@+id/rectshape1"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/balance_value"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balanceLayout"
+        android:id="@+id/homeExploreLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/homeExplore"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeExploreLayout"
+        android:id="@+id/grabLorryBtnLayout"
+        >
+
+        <ImageView
+            android:id="@+id/rectshape2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/balance_value"
+            android:src="@drawable/rectangle"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lorry"
+            android:layout_alignStart="@+id/rectshape2"
+            android:layout_alignTop="@+id/rectshape2"
+            android:layout_alignBottom="@+id/rectshape2"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/grabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rectshape2"
+            android:layout_alignTop="@+id/rectshape2"
+            android:layout_alignBottom="@+id/rectshape2"
+            android:layout_alignEnd="@+id/rectshape2"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/grabLorryText"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grabLorryBtnLayout"
+        android:id="@+id/ownLorryBtnLayout"
+        >
+
+        <ImageView
+            android:id="@+id/rectshape3"
+            android:contentDescription="@string/balance_value"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/rectangle"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/steering"
+            android:layout_alignStart="@+id/rectshape3"
+            android:layout_alignTop="@+id/rectshape3"
+            android:layout_alignBottom="@+id/rectshape3"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/ownLorryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rectshape3"
+            android:layout_alignTop="@+id/rectshape3"
+            android:layout_alignBottom="@+id/rectshape3"
+            android:layout_alignEnd="@+id/rectshape3"
+            android:gravity="center"
+            android:text="@string/showOwnLorryText"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

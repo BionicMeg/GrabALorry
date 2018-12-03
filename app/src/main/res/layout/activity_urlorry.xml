@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myLorryRelative">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/myLorryRelative1">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/lorrySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:showText="false"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/list_item_crime_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/lorrySwitch"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:paddingBottom="0dp"
+            android:text="@string/myLorryStatus"
+            android:textSize="17sp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/myLorryRelative2"
+        android:layout_below="@+id/myLorryRelative1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profNoPlatText"
+            android:minWidth="130dp"
+            android:id="@+id/myLorryNoPlatTextView"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myLorryNoPlatEditText"
+            android:layout_toEndOf="@+id/myLorryNoPlatTextView"
+            android:inputType="text"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLorryRelative3"
+        android:layout_below="@+id/myLorryRelative2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profWeightText"
+            android:minWidth="130dp"
+            android:id="@+id/myLorryWeightTextView"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myLorryWeightEditText"
+            android:layout_toEndOf="@+id/myLorryWeightTextView"
+            android:inputType="number"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLorryRelative4"
+        android:layout_below="@+id/myLorryRelative3"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_pick_up_text_view"
+            android:minWidth="130dp"
+            android:id="@+id/myLorryArriveTextView"
+            android:layout_centerVertical="true"
+            />
+
+        <fragment android:id="@+id/myLorryArriveAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_toEndOf="@+id/myLorryArriveTextView"
+            />
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myLorryArriveEditText"
+            android:layout_toEndOf="@+id/myLorryArriveTextView"
+            android:inputType="number"
+            />
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLorryRelative5"
+        android:layout_below="@+id/myLorryRelative4"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_destination_text_view"
+            android:minWidth="130dp"
+            android:id="@+id/myLorryBackTextView"
+            android:layout_centerVertical="true"
+            />
+
+        <fragment android:id="@+id/myLorryBackAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_toEndOf="@+id/myLorryBackTextView"
+            />
+
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myLorryBackEditText"
+            android:layout_toEndOf="@+id/myLorryBackTextView"
+            android:inputType="number"
+            />
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLorryRelative6"
+        android:layout_below="@+id/myLorryRelative5"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/submit"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/myLorrySubmitBtn"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

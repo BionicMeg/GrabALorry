@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:id="@+id/layoutParent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/initial_relative"
+        >
+
+        <ImageView
+            android:id="@+id/rectshape2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/balance_value"
+            android:src="@drawable/rectangle"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/initial_relative1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/editRequiredWeight"
+                android:layout_toStartOf="@id/weightTextView"
+
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initial_weight_text_view"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/weightTextView"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/initial_relative2"
+            android:layout_below="@+id/initial_relative1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initial_pick_up_text_view"
+                android:id="@+id/pickUpTextView"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                />
+<!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPickUpLocation"
+                android:inputType="textPostalAddress"
+                android:layout_toEndOf="@+id/pickUpTextView"
+                />
+-->
+            <fragment android:id="@+id/pickup_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toEndOf="@+id/pickUpTextView"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/initial_relative3"
+            android:layout_below="@id/initial_relative2"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initial_destination_text_view"
+                android:id="@+id/destinationTextView"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                />
+            <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDestinyLocation"
+                android:inputType="textPostalAddress"
+                android:layout_toEndOf="@+id/destinationTextView"
+                />
+                -->
+            <fragment android:id="@+id/destiny_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_toEndOf="@+id/destinationTextView"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/arrow_navi1"
+            android:src="@drawable/arrow_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/initial_relative3"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

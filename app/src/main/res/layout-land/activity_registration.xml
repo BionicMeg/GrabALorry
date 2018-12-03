@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegistrationActivity"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsernameRegister"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="35dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editUsernameRegister"
+            android:layout_below="@id/txtUsernameRegister"
+            android:inputType="text"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email Address:"
+            android:id="@+id/textView"
+            android:layout_below="@+id/editUsernameRegister"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/txtEmailRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Password"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/txtEmailRegistration"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtPasswordRegistration"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/txtEmailRegistration" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Confirm Password"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/txtPasswordRegistration"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtConfirmPasswordRegistration"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/txtEmailRegistration"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Account"
+            android:id="@+id/btnRegistrationUser"
+            android:layout_below="@+id/txtConfirmPasswordRegistration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            />
+        <!--android:onClick="btnRegistrationUser_Click"-->
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <!--
+
+
+    <TextView
+        android:id="@+id/list_item_record_pickup_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/list_item_record_status"
+        android:textStyle="bold"
+        android:padding="4dp"
+        tools:text="PickUp"
+
+        />
+
+    <TextView
+        android:id="@+id/list_item_record_to_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/list_item_record_status"
+        android:layout_below="@id/list_item_record_pickup_text_view"
+        android:padding="4dp"
+        android:text="to"
+        />
+
+-->
+
+    <TextView
+        android:id="@+id/list_item_record_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/recordStatus"
+        android:padding="4dp"
+        />
+
+    <TextView
+        android:id="@+id/list_item_record_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/list_item_record_status"
+        android:padding="4dp"
+        tools:text="Date"
+        />
+
+</RelativeLayout>

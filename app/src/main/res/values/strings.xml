@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">GrabALorry</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="language_en" translatable="false">English</string>
+    <string name="language_zh" translatable="false">华语</string>
+
+    <string name="navigation_profile">Profile</string>
+    <string name="navigation_top_up">Top Up</string>
+    <string name="navigation_history">History</string>
+    <string name="navigation_logout">Log Out</string>
+
+    <!--Login-->
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="noAccRegister">No Account? Register.</string>
+
+    <!--Register-->
+    <string name="registerUsernameTextView">Username</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="registerAcc">Register Account</string>
+
+    <!--Home page-->
+    <string name="name" translatable="false"> </string>
+
+    <string name="balance_value" translatable="false">0</string>
+    <string name="balance_title">Balance : </string>
+
+    <string name="greetText">Hi</string>
+    <string name="homeExplore">Explore</string>
+
+    <string name="grabLorryText">Grab a Lorry</string>
+    <string name="showOwnLorryText">Your Lorry</string>
+
+    <string name="logo" translatable="false">App Logo</string>
+
+    <!--Top up pahe-->
+    <string name="topupText">Top Up</string>
+
+    <!--profile page items-->
+    <string name="profTitleText">Profile</string>
+    <string name="profNameText">Name:</string>
+    <string name="profNoPlatText">Lorry No Plat: </string>
+    <string name="profWeightText">Lorry Max Weight: </string>
+
+    <!--submit button at profile-->
+    <string name="submit">Submit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <!--maps-->
+    <string name="google_maps_key" translatable="false">AIzaSyDIit51xrDNxb4zMtF4Wk09h6AV6F71k7s</string>
+    <string name="get_last_location" translatable="false">GET LAST LOCATION</string>
+
+    <!--fragment initial-->
+    <string name="initial_weight_text_view" translatable="false">kg</string>
+    <string name="initial_pick_up_text_view">Pick Up</string>
+    <string name="initial_destination_text_view">Destination</string>
+
+    <!--fragment booking-->
+    <string name="booking_distance_text_view" translatable="false"> </string>
+    <string name="booking_distance_unit_string" translatable="false">km</string>
+    <string name="booking_cost_text_view" translatable="false"> </string>
+    <string name="booking_cost_unit_string">Points</string>
+    <string name="booking_submit_text_view">Book</string>
+
+
+    <!--my lorry-->
+    <string name="myLorryStatus">Start Business</string>
+
+
+    <!--History-->
+    <string name="recordStatus" translatable="false"> </string>
+    <string name="recordBook">Bookings</string>
+    <string name="recordBusiness">Business</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="pay">Pay</string>
+    <string name="dialog_title">Details</string>
+    <string name="dialogComplete">Sending Complete</string>
+    <string name="dialogClose">Close</string>
+
+    <!--Business activity-->
+    <string name="businessFare">Fare </string>
+    <string name="businessRequiredWeight">Required Weight </string>
+
+
+</resources>
