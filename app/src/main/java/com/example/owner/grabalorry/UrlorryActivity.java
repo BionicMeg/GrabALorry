@@ -348,9 +348,9 @@ public class UrlorryActivity extends AppCompatActivity {
                                 }
 
                                 if (!firstDocument.getId().equals(NavigationActivity.getStaticUid())) {
-                                    //requesterID=firstDocument.getId();
-                                    //requesterEmail=firstDocument.getString("email").toString();
-                                    goInSubCollection(firstDocument.getId(),firstDocument.getString("email").toString());
+                                    requesterID=firstDocument.getId();
+                                    requesterEmail=firstDocument.getString("email").toString();
+                                    goInSubCollection(firstDocument.getId());
                                 }
 
                             }
@@ -368,7 +368,7 @@ public class UrlorryActivity extends AppCompatActivity {
 
     }
 
-    private void goInSubCollection(final String uid, final String email ){
+    private void goInSubCollection(final String uid){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         db.collection("users").document(uid).collection("booking")
@@ -429,9 +429,6 @@ public class UrlorryActivity extends AppCompatActivity {
 
                                             if (lorryDestinyArea.equals(destinyArea) && lorryPickArea.equals(pickUpArea)) {
                                                 searchResult=true;
-
-                                                requesterID = uid;
-                                                requesterEmail = email;
 
 
                                                 localRecord = new Record(

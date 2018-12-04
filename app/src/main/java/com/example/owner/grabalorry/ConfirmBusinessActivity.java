@@ -101,7 +101,6 @@ public class ConfirmBusinessActivity extends AppCompatActivity {
 
                         updatePartner(UrlorryActivity.getRequesterID(), UrlorryActivity.getRequesterBookID(), documentReference.getId());
 
-                        Log.d("Testing",""+UrlorryActivity.getRequesterID()+"  "+UrlorryActivity.getRequesterBookID()+"  "+documentReference.getId());
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
